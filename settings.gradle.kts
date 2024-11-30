@@ -21,3 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidCommon"
 include(":app")
+include(":base_common")
+include(":mobile_ads")
+include(":billing_library")

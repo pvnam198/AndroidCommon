@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-abstract class BaseRecyclerViewAdapter<T>(
-    private val items: MutableList<T>
-) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+abstract class BaseRecyclerViewAdapter<T> : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+    private val items: MutableList<T> = mutableListOf()
 
     // Abstract method to bind data to the view holder
     abstract fun bindViewHolder(holder: RecyclerView.ViewHolder, item: T, position: Int)

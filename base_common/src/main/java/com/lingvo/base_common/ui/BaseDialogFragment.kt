@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.FragmentManager
 
 abstract class BaseDialogFragment : DialogFragment() {
 
@@ -71,5 +72,12 @@ abstract class BaseDialogFragment : DialogFragment() {
         // Perform cleanup actions defined in the cleanup method
         cleanup()
     }
+
+    override fun show(fragmentManager: FragmentManager, tag: String?) {
+        if (fragmentManager.findFragmentByTag(tag) != null) return
+        super.show(fragmentManager, tag)
+    }
+
+
 }
 

@@ -1,4 +1,4 @@
-package com.lingvo.base_common
+package com.lingvo.base_common.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater

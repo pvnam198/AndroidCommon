@@ -1,4 +1,4 @@
-package com.lingvo.base_common.overlay_view
+package com.lingvo.base_common.ui.overlay_view
 
 import android.content.Context
 import android.graphics.Canvas

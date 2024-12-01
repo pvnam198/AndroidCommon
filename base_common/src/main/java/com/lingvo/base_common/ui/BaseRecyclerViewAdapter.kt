@@ -1,4 +1,4 @@
-package com.lingvo.base_common
+package com.lingvo.base_common.ui
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -34,7 +34,8 @@ abstract class BaseRecyclerViewAdapter<T> : RecyclerView.Adapter<RecyclerView.Vi
 
     // Method to create the view holder based on the view type
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(getItemLayout(viewType), parent, false)
+        val view =
+            LayoutInflater.from(parent.context).inflate(getItemLayout(viewType), parent, false)
         return createViewHolder(view, viewType)
     }
 
